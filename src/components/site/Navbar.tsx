@@ -13,7 +13,7 @@ const NAV_LINKS = [
 ];
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Sutomore+Beach+Montenegro";
+  "https://maps.app.goo.gl/zXJmiaQpeMcSE5or8";
 
 export function Navbar() {
   const { lang, setLang, tr } = useLang();

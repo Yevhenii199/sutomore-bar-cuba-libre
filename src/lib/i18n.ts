@@ -2,95 +2,102 @@ export type Lang = "en" | "cnr" | "ru";
 
 export const LANGS: { code: Lang; label: string; flag: string }[] = [
   { code: "en", label: "EN", flag: "🇬🇧" },
-  { code: "cnr", label: "ЦРН", flag: "🇲🇪" },
+  { code: "cnr", label: "MNE", flag: "🇲🇪" },
   { code: "ru", label: "РУ", flag: "🇷🇺" },
 ];
 
 type Dict = Record<string, { en: string; cnr: string; ru: string }>;
 
 export const t: Dict = {
-  nav_home: { en: "Home", cnr: "Почетна", ru: "Главная" },
-  nav_menu: { en: "Cocktails & Menu", cnr: "Коктели и Мени", ru: "Коктейли и Меню" },
-  nav_gallery: { en: "Gallery", cnr: "Галерија", ru: "Галерея" },
-  nav_location: { en: "Location & Hours", cnr: "Локација и Радно време", ru: "Локация и Часы" },
-  nav_view_location: { en: "View Location", cnr: "Прикажи Локацију", ru: "Показать Локацию" },
+  // Navigation
+  nav_home: { en: "Home", cnr: "Početna", ru: "Главная" },
+  nav_menu: { en: "Cocktails & Menu", cnr: "Kokteli i meni", ru: "Коктейли и меню" },
+  nav_gallery: { en: "Gallery", cnr: "Galerija", ru: "Галерея" },
+  nav_location: { en: "Location & Hours", cnr: "Lokacija i radno vrijeme", ru: "Локация и часы" },
+  nav_view_location: { en: "View Location", cnr: "Prikaži lokaciju", ru: "Показать локацию" },
 
-  hero_kicker: { en: "Sutomore Beach · Since 2001", cnr: "Плажа Сутоморе · Од 2001.", ru: "Пляж Сутоморе · С 2001" },
-  hero_title_a: { en: "Feel the Cuban Rhythm", cnr: "Осјетите Кубански Ритам", ru: "Почувствуй Кубинский Ритм" },
-  hero_title_b: { en: "on the Adriatic Shore", cnr: "на Јадранској Обали", ru: "на Адриатическом Берегу" },
+  // Hero Section
+  hero_kicker: { en: "Sutomore Beach · Since 2001", cnr: "Plaža Sutomore · Od 2001.", ru: "Пляж Сутоморе · С 2001 года" },
+  hero_title_a: { en: "Feel the Cuban Rhythm", cnr: "Osjetite kubanski ritam", ru: "Почувствуйте кубинский ритм" },
+  hero_title_b: { en: "on the Adriatic Shore", cnr: "na jadranskoj obali", ru: "на Адриатическом побережье" },
   hero_sub: {
-    en: "Best cocktails, ice cold beer & sunset vibes on Sutomore Beach, Montenegro.",
-    cnr: "Најбољи коктели, ледено пиво и залазак сунца на плажи Сутоморе, Црна Гора.",
-    ru: "Лучшие коктейли, ледяное пиво и закаты на пляже Сутоморе, Черногория.",
+    en: "Craft cocktails, ice-cold beer & sunset vibes right on Sutomore Beach, Montenegro.",
+    cnr: "Vrhunski kokteli, hladno pivo i zalasci sunca na samoj obali Sutomora, Crna Gora.",
+    ru: "Фирменные коктейли, ледяное пиво и атмосферные закаты прямо на пляже Сутоморе, Черногория.",
   },
-  hero_cta_menu: { en: "Explore Menu", cnr: "Погледај Мени", ru: "Смотреть Меню" },
-  hero_cta_dir: { en: "Get Directions", cnr: "Правац до нас", ru: "Как добраться" },
+  hero_cta_menu: { en: "Explore Menu", cnr: "Pogledajte meni", ru: "Смотреть меню" },
+  hero_cta_dir: { en: "Get Directions", cnr: "Kako do nas", ru: "Как добраться" },
 
-  features_title: { en: "Your Slice of Havana", cnr: "Ваш комад Хаване", ru: "Твой кусочек Гаваны" },
+  // Features Section
+  features_title: { en: "Your Slice of Havana", cnr: "Vaš komad Havane", ru: "Ваш кусочек Гаваны" },
   features_sub: {
-    en: "Everything a perfect beach day needs — right at the water's edge.",
-    cnr: "Све што савршен дан на плажи тражи — на самој обали мора.",
-    ru: "Всё для идеального дня на пляже — прямо у кромки воды.",
+    en: "Everything you need for a perfect beach day — right at the water's edge.",
+    cnr: "Sve što vam je potrebno za savršen dan na plaži — tik uz more.",
+    ru: "Всё для идеального дня на пляже.",
   },
-  feat1_t: { en: "Signature Beach Cocktails", cnr: "Ауторски Коктели", ru: "Фирменные Коктейли" },
+  feat1_t: { en: "Signature Beach Cocktails", cnr: "Autorski kokteli", ru: "Фирменные коктейли" },
   feat1_d: {
-    en: "Mojito, Cuba Libre, Piña Colada — mixed fresh with real Cuban soul.",
-    cnr: "Мохито, Куба Либре, Пина Колада — свјеже мијешани уз праву кубанску душу.",
-    ru: "Мохито, Куба Либре, Пина Колада — свежие, с настоящей кубинской душой.",
+    en: "Mojito, Cuba Libre, Piña Colada — freshly mixed with authentic Cuban soul.",
+    cnr: "Mojito, Cuba Libre, Piña Colada — svježe pripremljeni sa pravom kubanskom dušom.",
+    ru: "Мохито, Куба Либре, Пинья Колада — свежие коктейли с настоящей кубинской душой.",
   },
-  feat2_t: { en: "Beachfront Lounging", cnr: "Уживање на плажи", ru: "Отдых у моря" },
+  feat2_t: { en: "Beachfront Lounging", cnr: "Odmor na plaži", ru: "Отдых у моря" },
   feat2_d: {
-    en: "Sunbeds, umbrellas, and a wooden deck bar right by the sea.",
-    cnr: "Лежаљке, сунцобрани и дрвени бар на самом мору.",
-    ru: "Шезлонги, зонты и деревянный бар прямо у воды.",
+    en: "Sunbeds, umbrellas, and a relaxed wooden deck bar right on the sand.",
+    cnr: "Ležaljke, suncobrani i drveni šank bar na samoj plaži.",
+    ru: "Шезлонги, зонты и уютный деревянный бар прямо на пляже.",
   },
-  feat3_t: { en: "Sunset Beats", cnr: "Ритмови заласка", ru: "Закатные Ритмы" },
+  feat3_t: { en: "Sunset Beats", cnr: "Ritmovi zalaska", ru: "Ритмы заката" },
   feat3_d: {
-    en: "Chill music, lazy bags, and a cold drink with the ocean breeze.",
-    cnr: "Опуштајућа музика, лење вреће и хладно пиће уз морски поветарац.",
-    ru: "Расслабляющая музыка, ленивые кресла и прохладный напиток с морским бризом.",
+    en: "Chillout music, cozy bean bags, and cold drinks with a fresh sea breeze.",
+    cnr: "Opuštajuća muzika, udobne fotelje i hladno piće uz morski povjetarac.",
+    ru: "Chillout-музыка, удобные кресла-мешки и прохладный напиток с морским бризом.",
   },
 
-  menu_title: { en: "Cocktail Menu", cnr: "Коктел Мени", ru: "Коктейльное Меню" },
+  // Categories & Menu
+  menu_title: { en: "Cocktail Menu", cnr: "Koktel meni", ru: "Коктейльное меню" },
   menu_sub: {
-    en: "Handcrafted drinks, poured with a smile.",
-    cnr: "Ручно прављена пића, послужена уз осмијех.",
-    ru: "Напитки ручной работы, поданные с улыбкой.",
+    en: "Handcrafted drinks poured with a smile.",
+    cnr: "Ručno rađena pića poslužena uz osmijeh.",
+    ru: "Авторские напитки, приготовленные с любовью.",
   },
-  cat_signature: { en: "Signature", cnr: "Ауторски", ru: "Фирменные" },
-  cat_classic: { en: "Classics", cnr: "Класици", ru: "Классика" },
-  cat_shots: { en: "Shots", cnr: "Шотови", ru: "Шоты" },
-  cat_beer: { en: "Beers & Soft", cnr: "Пива и Соко", ru: "Пиво и Софт" },
+  cat_signature: { en: "Signature", cnr: "Autorski", ru: "Фирменные" },
+  cat_classic: { en: "Classics", cnr: "Klasici", ru: "Классика" },
+  cat_shots: { en: "Shots", cnr: "Šotovi", ru: "Шоты" },
+  cat_beer: { en: "Beers & Soft Drinks", cnr: "Piva i bezalkoholna pića", ru: "Пиво и безалкогольные" },
 
-  gallery_title: { en: "The Vibe", cnr: "Атмосфера", ru: "Атмосфера" },
+  // Gallery
+  gallery_title: { en: "The Vibe", cnr: "Atmosfera", ru: "Атмосфера" },
   gallery_sub: {
-    en: "Wooden decks, warm light, cold drinks.",
-    cnr: "Дрвене терасе, топло свјетло, хладна пића.",
-    ru: "Деревянные террасы, тёплый свет, холодные напитки.",
+    en: "Wooden decks, warm sea light, and refreshing drinks.",
+    cnr: "Drvene terase, toplo morsko svjetlo i osvježavajuća pića.",
+    ru: "Деревянные террасы, тёплый морской свет и освежающие напитки.",
   },
 
-  loc_title: { en: "Find Us", cnr: "Пронађите Нас", ru: "Найти Нас" },
-  loc_addr_l: { en: "Address", cnr: "Адреса", ru: "Адрес" },
+  // Location & Working Hours
+  loc_title: { en: "Find Us", cnr: "Gdje se nalazimo", ru: "Как нас найти" },
+  loc_addr_l: { en: "Address", cnr: "Adresa", ru: "Адрес" },
   loc_addr: {
-    en: "Sutomore Beach Promenade, Bar Municipality, Montenegro",
-    cnr: "Шеталиште плаже Сутоморе, Општина Бар, Црна Гора",
-    ru: "Набережная пляжа Сутоморе, муниципалитет Бар, Черногория",
+    en: "Sutomore Beach Promenade, Bar, Montenegro",
+    cnr: "Šetalište Sutomore, Bar, Crna Gora",
+    ru: "Набережная Сутоморе, Бар, Черногория",
   },
-  loc_hours_l: { en: "Working Hours", cnr: "Радно вријеме", ru: "Часы работы" },
+  loc_hours_l: { en: "Opening Hours", cnr: "Radno vrijeme", ru: "Режим работы" },
   loc_hours: {
-    en: "Mon – Sun · 08:00 – 01:00 (Summer Season)",
-    cnr: "Пон – Нед · 08:00 – 01:00 (Љетна сезона)",
-    ru: "Пн – Вс · 08:00 – 01:00 (Летний сезон)",
+    en: "Mon – Sun · 08:00 – 20:00 (Summer Season)",
+    cnr: "Pon – Ned · 08:00 – 20:00 (Ljetnja sezona)",
+    ru: "Пн – Вс · 08:00 – 20:00 (Летний сезон)",
   },
-  loc_open_daily: { en: "Open Daily", cnr: "Отворено сваког дана", ru: "Открыто ежедневно" },
-  loc_map_cta: { en: "Open in Google Maps", cnr: "Отвори у Google Maps", ru: "Открыть в Google Maps" },
-  loc_follow: { en: "Follow the vibe", cnr: "Пратите нас", ru: "Следите за нами" },
+  loc_open_daily: { en: "Open Daily", cnr: "Otvoreno svakog dana", ru: "Открыто ежедневно" },
+  loc_map_cta: { en: "Open in Google Maps", cnr: "Otvori u Google Maps", ru: "Открыть в Google Maps" },
+  loc_follow: { en: "Follow the Vibe", cnr: "Pratite nas", ru: "Следите за нами" },
 
-  footer_rights: { en: "All rights reserved.", cnr: "Сва права задржана.", ru: "Все права защищены." },
+  // Footer
+  footer_rights: { en: "All rights reserved.", cnr: "Sva prava zadržana.", ru: "Все права защищены." },
   footer_tag: {
     en: "Cocktails · Beach · Sunsets since 2001",
-    cnr: "Коктели · Плажа · Заласци од 2001.",
-    ru: "Коктейли · Пляж · Закаты с 2001",
+    cnr: "Kokteli · Plaža · Zalasci sunca od 2001.",
+    ru: "Коктейли · Пляж · Закаты с 2001 года",
   },
 };
 

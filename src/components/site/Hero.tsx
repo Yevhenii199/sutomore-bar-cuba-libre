@@ -3,7 +3,7 @@ import heroImg from "@/assets/hero-beach.jpg";
 import { useLang } from "@/lib/lang-context";
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Sutomore+Beach+Montenegro";
+  "https://maps.app.goo.gl/zXJmiaQpeMcSE5or8";
 
 export function Hero() {
   const { tr } = useLang();

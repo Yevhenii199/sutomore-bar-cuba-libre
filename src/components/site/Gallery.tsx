@@ -4,12 +4,24 @@ import mojito from "@/assets/gallery-mojito.jpg";
 import sunbeds from "@/assets/gallery-sunbeds.jpg";
 import signpost from "@/assets/gallery-signpost.jpg";
 import hero from "@/assets/hero-beach.jpg";
+
+import beachSign from "@/assets/gallery-beach-sign.jpg";
+import barInterior from "@/assets/gallery-bar-interior.jpg";
+import menuBoard from "@/assets/gallery-menu-board.jpg";
+
+// Новий імпорт для входу з прапором
+import entrance from "@/assets/gallery-entrance.jpg";
+
 import { useLang } from "@/lib/lang-context";
 
 const shots = [
   { src: sunbeds, alt: "Beach sunbeds at sunset", span: "sm:col-span-2 sm:row-span-2" },
   { src: corona, alt: "Cold Corona beer at sunset", span: "" },
   { src: mojito, alt: "Fresh mojito on the beach", span: "" },
+  { src: entrance, alt: "Cuba Libre entrance with Cuban flag and straw arch", span: "sm:col-span-2" },
+  { src: barInterior, alt: "Rustic wooden beach bar interior with straw roof", span: "sm:col-span-2" },
+  { src: beachSign, alt: "Wooden beach direction signpost by the sea", span: "" },
+  { src: menuBoard, alt: "Hand-painted wooden cocktail menu board", span: "" },
   { src: mural, alt: "Cuban mural wall art", span: "sm:col-span-2" },
   { src: signpost, alt: "Havana Miami Cuba wooden signpost", span: "" },
   { src: hero, alt: "Sunset beach bar", span: "" },

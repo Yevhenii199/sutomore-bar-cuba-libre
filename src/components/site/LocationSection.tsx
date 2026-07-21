@@ -2,9 +2,9 @@ import { MapPin, Clock, Instagram, Facebook, MessageCircle, Send, Martini } from
 import { useLang } from "@/lib/lang-context";
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Sutomore+Beach+Montenegro";
+  "https://maps.app.goo.gl/zXJmiaQpeMcSE5or8";
 const MAPS_EMBED =
-  "https://www.google.com/maps?q=Sutomore+Beach+Montenegro&output=embed";
+  "https://maps.google.com/maps?q=Beach+Bar+Cuba+Libre,+Sutomore&t=&z=17&ie=UTF8&iwloc=&output=embed";
 
 export function LocationSection() {
   const { tr } = useLang();
